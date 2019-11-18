@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mods & Courses 1 </title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylefirst.css') }}"> 
+  <meta property="og:url"           content="{{ url_for('link2') }}" />
+</head>
+
+
+<body>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0"></script>
+    
+    <h1> Modules and Courses</h1>
+    <p> On NUSWhispers, people often ask about and share about modules.</br>
+        We want to find out which are the most popular modules and why they are being mentioned. </br>
+        Furthermore, since the modules have different levels (basic/advanced), we can identify </br>
+        the type of students belonging to one course and plot their journey on NUSWhispers. </br>
+    </p>
+    <h2> Distribution of top modules mentioned</h2>
+    <img src="static/img/course1.png" fill="white" width="600" height="500" vertical-align="middle"> 
+    <p> We can observe that Computer Science takes up a huge proportion of mentions, </br>
+        followed by Math and a mix of sciences and general education modules. </br>
+        We can look at the top ranked modules of each year to have a better idea of which modules are popular. </br>
+
+    <h2> Ranking of top modules mentioned</h2>
+    <p>Before we proceed with the analysis, I want to briefly introduce you to the method I used to calculate mentions.</br>
+       This is because it will affect the accuracy of the analysis, as well as provide a different insight. </p>
+   
+    <img src="static/img/course2.png" fill="white" width="400" height="250" vertical-align="middle"> 
+    <p> Method 2 is more accurate to calculate top ranked modules. </br>
+        Imagine that one confession is ranting about a particular module and mentions it 5 times. </br>
+        Using method 1, this will greatly inflate the ranking of a module, compared to method 2. </br> </p>
+    <p>
+        Nevertheless, method 1 still has its use, since we can compare the rankings using method 1 vs method 2 </br>
+        to identify the modules that have multiple mentions in one confession. </br>
+        This can indicate that the confessions relating to the module may be of a different nature (eg. a rant), </br>
+        such that that the writer mentions the module multiple times. </br>
+        Let's see an example to make this clearer: </p>
+
+    <img src="static/img/course3.png" fill="white" width="400" height="350" vertical-align="middle"> 
+    <p> We can see that cfg1010 is top ranked with 26 mentions in 2017, using method 1. </br>
+        However, its number of mentions dropped quite significantly using method 2. </br>
+        This shows that there are multiple mentions of cfg1010 in a confession. </br>
+        Let's investigate why by looking at a sample confession: </p>
+    <img src="static/img/mod1.png" fill="white" width="900" height="165" vertical-align="middle"> 
+    <p>It appears that confessions that mention cfg1010 generally involve more discussion, resulting in more mentions in one confession. </br>
+     In contrast, confessions on other modules such as cs2010 are shorter and more straightforward: </p>
+    <img src="static/img/mod2.png" fill="white" width="900" height="60" vertical-align="middle"> 
+    <p>For the rest of the analysis, we shall use Method 2 due to its accuracy. </br>
+       Let's compare the top 10 modules mentioned for 2018 and 2019. </p>
+    <img src="static/img/course4.png" fill="white" width="400" height="300" vertical-align="middle"> 
+    <p>Majority of the top ranked modules are CS again. However, one interesting thing is that we see a spike in mentions of cs2030</br>
+       from 2018 to 2019. Let's investigate why: </p>
+    <img src="static/img/mod3.png" fill="white" width="900" height="130" vertical-align="middle"> 
+    <p> It turns out that many confessions on cs2030 are actually complaints about the workload of cs2030, </br>
+        explaining the spike in mentions. This is because cs2030 is a new module </br>
+        and many students aren't happy with the changes. </br>
+        In contrast, confessions on cs2040, another popular module, are more balanced:  </p>
+    <img src="static/img/mod4.png" fill="white" width="900" height="155" vertical-align="middle"> 
+
+    <p>Now that we have a general idea of what modules are popular, and looked at a few specific modules, </br>
+       Let's go one step further to break down modules into "ask vs share", "first CS module vs higher-level CS module".</br>
+       You can view part 2 of the analysis here: <a href="{{ url_for('link6') }}"> Module Analysis part 2</a></p>
+
+     <div class="fb-like" data-href="{{ url_for('link2') }}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+
+</body>

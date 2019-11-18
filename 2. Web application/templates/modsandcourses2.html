@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mods & Courses 2</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylefirst.css') }}"> 
+  <meta property="og:url"           content="{{ url_for('link6') }}" />
+</head>
+
+
+<body>
+
+    
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0"></script>
+
+
+    <h2> Breaking down "modules mentioned" and identifying types of CS confessions</h2>
+    <p>Up to now, we have been talking down about mentions of a module in a confession. </br>
+       However, there are two different cases where a student will mention a module: </br> 
+       1) Asking for more information about a module eg. "Has anyone taken CS2030?" </br>
+       2) Sharing his/her experience about a module eg. "CS2030 midterm was very hard" </br> 
+        As a result, we can break down "modules mentioned" into "asking about modules" and "sharing about modules": </p>
+
+    <img src="static/img/course5.png" fill="white" width="600" height="325" vertical-align="middle"> 
+    <p>Moreover, there are different levels of modules: the students' first CS module (CS1010, CS1010S, CS1010E) and higher-level CS modules. </br>
+       Again, we can further break down the pie chart: </p>
+    <img src="static/img/course6.png" fill="white" width="600" height="450" vertical-align="middle"> 
+    <p> We can see that "sharing about higher level CS modules" makes up the most confessions while "sharing about first CS module" makes up the least. </br>
+        However, it is not a fair comparison, since "sharing about higher level CS modules" includes 40 modules, compared to "sharing about first CS module" which includes 3.</br>  
+        Therefore, it is more appropriate to compare the average % of a module being shared about or asked about instead: </p>
+
+    <img src="static/img/course7.png" fill="white" width="700" height="450" vertical-align="middle"> 
+    <p> Now, we can clearly see that students tend to ask and share about first CS modules compared to higher level CS modules. </br>
+        Perhaps, students are more enthusiastic at the start of their CS journey. </p>
+  
+       <p>Now, let's summarize the previous breakdown of "modules mentioned" and consequently try to identify 4 different groups of CS students on NUSWhispers. </br>
+          We want to do this because segmenting students into groups allows us to discover interesting insights such as</br>
+          how many students want to enter CS and how much each group is growing each year. </p>
+       
+    <img src="static/img/course8.png" fill="white" width="700" height="520" vertical-align="middle"> 
+    <p>While the groups are largely mutually exclusive, it seems that they are related in some way. </br>
+       Let's plot the journey of a CS Student on NUSWhispers to make the relationship clear. Let's name the student Jack. </p>
+    <p> Step 1: When deciding to enter CS, Jack decides to ask about his first CS module CS1010. At this point, he belongs to group 1. </br>
+       Step 2: During the course, Jack decides to share his/her experience about the module. At this point, he belongs to group 3. </br>
+       Step 3: After completing the first CS module, Jack asks about higher-level CS modules, therefore belonging to group 2. </br>
+       Step 4: During the higher-level module, Jack shares about his experience, therefore belonging to group 4. </br>
+       Step 5a: After the course, Jack proceeds to take other modules, therefore repeating steps 3 and 4. </br>
+       Step 5b: After Jack has fulfilled his module requirements, he graduates. However, sometimes he sees interesting things on NUSWhispers </br>
+                and decides to share about his experience in CS1010 or higher-level CS modules. Thus, he is classified under group 3 or group 4 again. </p>
+
+    <img src="static/img/course9.png" fill="white" width="700" height="450" vertical-align="middle"> 
+    <p>This journey map illustrates that the groups are related and a student belonging to one group can convert to other groups as </br>
+       the student becomes more advanced and takes higher-level modules. However, this also alerts a problem: it is possible for one student </br>
+       to convert to another group within the same year. For instance, a student can ask about a first CS module and then share about it </br>
+       when he is taking the course, therefore belonging to group 1 and group 3 in the same year. </p>
+       
+     <p>This means that he will be double counted under 2 groups in the same year, which makes the calculation inaccurate.</br> 
+        However, given that each confession is anonymous, we can't trace back confessions to identify which students made the confessions. </br>
+       As such, we will make a big assumption that one student only makes one confession (and not multiple confessions) in one year.</br>
+       Following this, we can plot the growth of each group across years: </p>
+
+    <img src="static/img/course10.png" fill="white" width="700" height="400" vertical-align="middle"> 
+    <p> We can observe that group 1 (students that want to enter CS) is growing exponentially, showing that more and more students have an interest to enter CS. </br>
+        Group 4 (sharing about higher level CS mods) also appears to growing at a rapid rate. This can be due to multiple reasons: </p>
+    <p> 1) students are becoming more active on NUSWhispers in general and are more willing to share their experiences with higher level CS mods, </br>
+        2) students are having more frustrations with higher level CS mods (eg. CS2030) resulting in more students turning to NUSWhispers to voice their displeasure, </br>
+        3) more students are converting from other groups to group 4 as they transit from taking their first CS module to higher level CS modules. </p>
+
+    <p> This analysis has been an effort to show not only the most popular modules mentioned, but going deeper into understanding </br>
+        students' motivations in mentioning the modules and how that factors into the grander scheme of a student's university journey. </br>
+        Hope you like it and let me you know if you have any feedback! </p>
+
+    <div class="fb-like" data-href="{{ url_for('link6') }}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+
+</body>

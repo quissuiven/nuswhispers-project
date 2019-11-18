@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popular Topics</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylefirst.css') }}"> 
+  <meta property="og:url"           content="{{ url_for('link3') }}" />
+</head>
+
+ <body>
+
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0"></script>
+   
+  <h1> Popular Topics </h1>
+  <p>Every year, thousands of confessions are posted on NUSWhispers. This begs the question of what are the major topics that people talk about. </br>
+     We can achieve this by identifying common keywords across confessions, and then inferring the topic. </p>
+  <h2> Major Topics people talk about </h2>
+  <img src="static/img/topic1.png" fill="white" width="600" height="200" vertical-align="middle"> 
+  <p> Out of these topics, romance/relationships tend to have the highest engagement (most likes and comments). </br>
+      Let's look at a few posts with high engagement for each topic in 2019: </p>
+  <img src="static/img/topic_job.png" fill="white" width="900" height="450" vertical-align="middle"> 
+  <p></p>
+  <img src="static/img/topic_relationships.png" fill="white" width="900" height="480" vertical-align="middle">
+  <p>We can already see some commonalities with these 2 confessions. Both address highly relatable job/relationship issues, </br>
+     tell a personal story and end with a lesson. Notice that while both confessions mention about jobs and relationships, </br>
+     the central theme of the first confession is about attitude towards one's job while the theme of the second is attitude towards one's relationship, </br>
+     which explains why they are categorized under their respective topics. Now let's look at the other topics: </p>
+
+  <img src="static/img/topic_modules.png" fill="white" width="900" height="520" vertical-align="middle">
+  <p></p>
+  <img src="static/img/topic_studentlife.png" fill="white" width="700" height="150" vertical-align="middle">
+  <p>At this point, we know that posts with the most engagement tend to revolve around relatable issues and tell an inspirational story. </br>
+     However, as we see from the Student Life confession, short and unexpected confessions also garner many likes and comments.</p>
+  <h2> Current Issues confessions across the years </h2>
+  <p> As current issues are different each year, I thought it would be interesting to look at the top current issues confessions each year. </p>
+  <img src="static/img/topic_currentaffairs_2019.png" fill="white" width="900" height="340" vertical-align="middle">
+  <p></p>  
+  <img src="static/img/topic_currentaffairs_2018.png" fill="white" width="900" height="160" vertical-align="middle">
+  <p>It seems that confessions about current issues appear to have less engagement compared to other topics. </br>
+     This can be worrying since current issues are important to the development of our society. </p>
+  <img src="static/img/topic_currentaffairs_2017.png" fill="white" width="900" height="450" vertical-align="middle">
+  <p> </p>
+  <img src="static/img/topic_currentaffairs_2016.png" fill="white" width="900" height="290" vertical-align="middle">
+  <p> Looks like orientation scandals started as early as 2016, and the issue resurfaced in 2019. </br>
+      Hopefully, we have developed as a society in our maturity to discuss and resolve this issue. </br>
+      The saga about a young couple arguing with an old man over seats in 2017 reminds me of the recent incident in 2019 </br>
+      where a condominium owner shouted vulgarities at a security officer over parking fees. </br>
+      As a society, we have strong reactions towards such issues: hate comments towards the couple </br>
+      and a petition to get the condo owner fired from his company. </p>
+  <img src="static/img/topic_currentaffairs_2015.png" fill="white" width="900" height="220" vertical-align="middle">
+  <p> LGBT rights are one of the most discussed current issues in 2015. This is likely due to the Singapore Supreme Court</br>
+      upholding Section 377A (ban on same-sex relations between consenting adult men) in Oct 2014.
+
+  <p> Over the years, different issues have emerged, challenging our society. </br>
+     Hopefully, we will continue to mature as a society to discuss and resolve these issues. </br>
+
+  <div class="fb-like" data-href="{{ url_for('link3') }}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+     
+</body>

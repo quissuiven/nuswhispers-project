@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Sentiment</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylefirst.css') }}"> 
+  <meta property="og:url"           content="{{ url_for('link4') }}" />
+</head>
+
+<body>
+    
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0"></script>
+
+  <h1> Job Sentiment </h1>
+  <p> Given the US-China trade war and many articles reporting how difficult it is to find jobs, </br>
+      I thought it would be interesting to find out how people feel about finding jobs over the years.
+  </p>
+  <h2> How people feel about jobs in general over the years </h2>
+  <p> To determine whether a confession is positive or negative, </br>
+      we can assign scores to characters/words/sentences in the confession. </br>
+      For instance, a smiley face ":)" or the word "good" will have a higher score. </p>
+   <p>Therefore, higher scores mean the confessions are more positive, </br>
+      while lower scores mean the confessions are more negative. </p>
+  </p>
+  <img src="static/img/jobsentiment1.png" fill="white" width="500" height="350" vertical-align="middle"> 
+  <p> From the graph, we can observe a significant dip in job sentiment in 2018. </br>
+      We can look at the confessions in 2018 to understand why.
+  </p>
+  <img src="static/img/jobsentimentconfession1.png" fill="white" width="900" height="90" vertical-align="middle">  
+
+  <p> It appears that there are many negative confessions in 2018. </br>
+      However, we see that these confessions are related to jobs in general, but not specifically finding jobs. </br>
+      Instead, what we are interested in is a confession that has the keywords "find job" or "secure employment" like the following:
+  </p>
+  <img src="static/img/jobsentimentconfession2.png" fill="white" width="900" height="40" vertical-align="middle"> 
+
+  <h2> How people feel about finding jobs over the years </h2>
+  <p> To identify sentiment for "finding jobs", I first filtered the dataset by identifying confessions that contain "find job" or secure employment." </br>
+      I decided to exclude year 2018 from the analysis since its sample size is too small (n < 30). </br>
+      Because the tool I used for sentiment analysis has a tendency to <a href="https://medium.com/@Intellica.AI/vader-ibm-watson-or-textblob-which-is-better-for-unsupervised-sentiment-analysis-db4143a39445">misclassify negative sentiments as positive</a>, </br>
+      I decided to just focus on the negative sentiments, which is primarily what we are interested in. </p>
+
+  <img src="static/img/jobsentiment2.png" fill="white" width="500" height="350" vertical-align="middle"> 
+  <p> We can clearly see that the negative "finding job" sentiments become more negative across the years. </br>
+      Like what we hypothesized, 2019 has the most negative sentiment because of the poor job market. </p>
+  
+  <p> Now, I know I wasn't the only one having a hard time finding jobs this year! </p> 
+
+  <div class="fb-like" data-href="{{ url_for('link4') }}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+
+</body>
+

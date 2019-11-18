@@ -1,0 +1,143 @@
+body {
+  color:#161616;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: currentColor;
+}
+.center-on-page {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+h1 {
+  text-align: center;
+  color:#FFFFFF;
+}
+
+h2 {
+  font-size: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 38px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 30px;
+  
+}
+h4 {
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+}
+p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
+  color:#FFFFFF;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+a {
+  font-size: 16px;
+  color:#FFFFFF;
+}
+
+
+
+img {
+  vertical-align: middle; 
+}
+
+
+
+
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: block;
+  width: 48em;
+  height: 4em;
+  line-height: 4;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+}
+select {
+  font-size:18px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 .5em;
+  color: #fff;
+  cursor: pointer;
+}
+select::-ms-expand {
+  display: none;
+}
+
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1.5em;
+  background: #34495e;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #4CAF50;
+}
+.select::after {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  font-size:18px;
+  font-weight: bold;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  margin-top: 20px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: .25em;
+}
+.button:hover {
+  background-color: #4CAF50;
+}
+

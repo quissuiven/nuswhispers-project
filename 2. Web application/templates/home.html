@@ -1,0 +1,28 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylefirst.css') }}">
+
+<div class="center-on-page">  
+<h1>Analysis of student confession page NUSWhispers</h1>
+
+<p><a href="http://www.nuswhispers.com">NUSWhispers</a> is the popular student confession page of the National University of Singapore. <br /> Given the variety of confessions, 
+I thought it would be interesting to find out answers to questions such as <br /> "what are the most popular topics people talk about" or 
+"how do people feel about finding jobs". <br /> This analysis covers 44,443 confessions made from Apr 2015 to Oct 2019. Hope you enjoy! :)
+
+</p>
+
+<form class="form-inline" method="POST"  action="{{ url_for('manageLinks') }}">
+   <div class="select">
+    <select name="rating" class="selectpicker form-control">
+      <option value="1">When did Prof Ben become popular and what topics do people ask him about?</option>
+      <option value="2">What are the most popular modules students ask and share about?</option>
+      <option value="3">What are the most popular topics that people talk about on NUSWhispers?</option>
+      <option value="4">Over the years, do people get more positive or negative about finding jobs?</option>
+      <option value="5">How do students feel during school semesters and how does it change nearing the exams?</option>
+    </select>
+   </div>
+    <button type="submit" class="button">Let's find out!</button>
+   <h3> Made by: Quissuiven Tai (Key), Cheryl Gan </h3>
+   <h4> Connect with me: <a href="https://www.linkedin.com/in/quissuiven-tai-key-226a1888"> <img src="static/img/linkedin.png"  fill="white" width="50" height="45" vertical-align="middle"></a>
+        How I did it: <a href="https://github.com/quissuiven/nuswhispers-project"><img src="static/img/github.png"  fill="white" width="50" height="45" vertical-align="middle"></a></h4>
+
+</form>

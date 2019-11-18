@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semester Sentiment</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylefirst.css') }}"> 
+  <meta property="og:url"           content="{{ url_for('link5') }}" />
+</head>
+<body>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0"></script>
+    
+    <h1> Semester sentiment </h1>
+    <p> Having been through 4 years of university, I know how hard it can get during school semesters. </br>
+        Therefore, I would like to investigate how students feel during schooling vs non-schooling semesters </br>
+        and how their sentiments fluctuate across the weeks during a schooling semester. </p>
+        
+    <h2> How students feel during schooling semesters vs non-schooling semester </h2>
+    <img src="static/img/semestersentiment1.png" fill="white" width="500" height="350" vertical-align="middle"> 
+    <p> As expected, off-sem has the highest score, meaning that people feel the most positive during a non-schooling semester. </br>
+        On the other hand, the semester where people feel the least positive is sem 1. </br>
+        Having talked to one of my NUS friends, she thinks that sem 1 is the semester where freshies are starting out </br>
+        and people are coming back from exchange. Thus, perhaps, most people are still not used to the workload </br>
+        and the overall sentiment is lower. </p>
+    <h2> How students feel across the weeks during schooling semesters</h2>
+    <p> We can now look in detail into students' sentiments across the weeks.</p>
+    <img src="static/img/semestersentiment2.png" fill="white" width="900" height="380" vertical-align="middle"> 
+    <p> Overall, as we mentioned above, students have more positive sentiments during sem 2 compared to sem 1. </br>
+        In addition, we see a downward trend for both semesters; students generally get less positive as the weeks pass. </br>
+
+    <p> Across the weeks, we observe a few peaks and troughs. Let's try and address them one by one. </br>
+        The first peak is around W3/W4. It is likely because students have finalized their modules and no longer have to worry. </br>
+        Moreover, at this point, they have probably gotten accustomed to their classes and made friends. </p>
+
+    <p> However, sentiment decreases from this point as students' workload increases. It is likely that there are troughs in W6 and W7 of sem 1 due to midterms. </br>
+        Comparatively, W6 and W7 of Sem 2 have more positive sentiments, perhaps because students are more used to doing midterms. </br>
+        What happens after W7 is interesting: Sem 2 experiences a trough in W8 and a peak in W9. Both semesters also experience a peak in W12. </br>
+        This is surprising to me, as I thought W12 and W13 are project weeks and students will be more stressed during this period. </p>
+         
+     <p>  Thereafter, we see a decrease in sentiment as exams approach, as expected. However, sentiment for sem 2 is higher </br>
+        than that for sem 1 during exam period. This is likely because there is a 4 months break </br>
+        after sem 2 compared to 1 month break for sem 1. </br>
+    
+        <p> Hope the sentiment analysis is interesting for you! Do let me know if </br>
+       you have an idea why students feel more positive in W12, 
+        I'm interested to find out! </p>
+
+     <div class="fb-like" data-href="{{ url_for('link5') }}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+        
+ </body>

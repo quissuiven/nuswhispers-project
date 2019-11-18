@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prof Ben Popularity</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylefirst.css') }}"> 
+  <meta property="og:url"           content="{{ url_for('link1') }}" />
+	
+</head>
+
+<body>
+
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v5.0"></script>
+
+  <h1> Prof Ben popularity </h1>
+  <p> Professor Ben Leong is a popular Computer Science professor in NUS, known for his dedication to help students and his wise advice. </br>
+  Out of late, there have been many confessions asking Prof Ben for advice. Thus, I was curious to </br> find out when Prof Ben became so popular
+  and what topics people usually consult him for.
+  </p>
+  <h2> Popularity of Prof Ben across the years </h2>
+  <p> One way we can find out about his popularity is to identify the number of times he was mentioned in confessions. </p>
+  <img src="static/img/profben1.png" fill="white" width="600" height="400" vertical-align="middle"> 
+  <p> From the above graph, we can see a general increase in his popularity from 2015 to 2019, with a surge from 2018 to 2019. </br>
+  This made me wonder: what are people asking Prof Ben about in 2019? </p>
+
+  <h2> Popular topics people ask Prof Ben about in 2019 </h2>
+  <p> To identify the topics, we can group together words to uncover common themes. </p>
+
+  <img src="static/img/profben2.png" fill="white" width="600" height="400" vertical-align="middle">
+  <p> It appears that most people consult Prof Ben regarding career/work. </br> Interestingly, around 43% of all confessions involve Computer Science.
+      This makes sense since Prof Ben is a CS professor. </br> However, this is also correlated with the increase in CS confessions, 
+       which most likely explains the surge in Prof Ben confessions in 2019. </br> You can see the increase in CS confessions over the years <a href="{{ url_for('link2') }}"> here.</a>
+  </p>
+ 
+  <p> To add more perspective, we can look at some confessions relating to each topic: </p>
+  <img src="static/img/profben4.png" fill="white" width="800" height="550" vertical-align="middle">
+
+  <p> It looks like Prof Ben is the go-to guru for different kinds of advice! </p>
+
+  <div class="fb-like" data-href="{{ url_for('link1') }}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+
+</body>
+ 
+</html>

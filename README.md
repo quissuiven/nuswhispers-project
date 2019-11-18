@@ -22,7 +22,7 @@ We will create data visualizations to answer the questions, as well as deploy a 
        > '1. Text Analysis/src/Topic Modeling.ipynb' conducts in-depth topic modeling and visualization
   - '2. Web Application' contains all the files required to deploy a web application
     -  '2. Web Application/venv' contains the files needed to initialize a virtual environment  
-    -  '2. Web Application/requirements' contains the libraries to be built inside the virtual environment
+    -  '2. Web Application/requirements.txt' contains the libraries to be built inside the virtual environment
     -  '2. Web Application/static' contains css and images of the visualizations made in the Text Analysis
     -  '2. Web Application/templates' contains the html files for each of the webpages
     -  '2. Web Application/main.py' is the backend Flask code that renders all the html pages

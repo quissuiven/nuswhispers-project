@@ -15,10 +15,15 @@ We will create data visualizations to answer the questions, as well as deploy a 
     -  '1. Text Analysis/models' contains the NLP models used in the analysis
     -  '1. Text Analysis/src' contains the scripts used to scrape, analyze and visualize the data:
        > 'webscraping.py' scrapes 6 content variables from 44438 urls
+       
        > 'Exploratory Analysis & Experimentation.ipynb' conducts data cleaning and preliminary analysis
+       
        > 'utils.py' stores all the essential functions from the preliminary analysis
+       
        > 'Sentiment Analysis.ipynb' conducts in-depth sentiment analysis and visualization
+       
        > 'Entity Extraction.ipynb' conducts in-depth entity extraction and visualization
+       
        > 'Topic Modeling.ipynb' conducts in-depth topic modeling and visualization
   - '2. Web Application' contains all the files required to deploy a web application
     -  '2. Web Application/venv' contains the files needed to initialize a virtual environment  

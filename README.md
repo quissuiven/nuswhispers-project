@@ -10,7 +10,7 @@ In this project, we will scrape information of 44438 texts from https://nuswhisp
 
 We will create data visualizations to answer the questions, as well as deploy a web application for the general public to read.
 
-![Alt text](/nuswhispers.png?raw=true =500x500)
+![Alt text](/nuswhispers.png?raw=true height="250" width="250")
 
 ### Folder Structure
   - '1. Text Analysis' contains all the files required to acquire, clean, analyze and visualize the text data

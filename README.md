@@ -12,8 +12,8 @@ We will create data visualizations to answer the questions, as well as deploy a 
 
 ### Folder Structure
   - '1. Text Analysis' contains all the files required to acquire, clean, analyze and visualize the text data
-    -  '1. Text Analysis/models' contains the NLP models used in the analysis
-    -  '1. Text Analysis/src' contains the scripts used to scrape, analyze and visualize the data:
+    -  'models' contains the NLP models used in the analysis
+    -  'src' contains the scripts used to scrape, analyze and visualize the data:
        > 'webscraping.py' scrapes 6 content variables from 44438 urls
        
        > 'Exploratory Analysis & Experimentation.ipynb' conducts data cleaning and preliminary analysis
@@ -26,8 +26,8 @@ We will create data visualizations to answer the questions, as well as deploy a 
        
        > 'Topic Modeling.ipynb' conducts in-depth topic modeling and visualization
   - '2. Web Application' contains all the files required to deploy a web application
-    -  '2. Web Application/venv' contains the files needed to initialize a virtual environment  
-    -  '2. Web Application/requirements.txt' contains the libraries to be built inside the virtual environment
-    -  '2. Web Application/static' contains css and images of the visualizations made in the Text Analysis
-    -  '2. Web Application/templates' contains the html files for each of the webpages
-    -  '2. Web Application/main.py' is the backend Flask code that renders all the html pages
+    -  'venv' contains the files needed to initialize a virtual environment  
+    -  'requirements.txt' contains the libraries to be built inside the virtual environment
+    -  'static' contains css and images of the visualizations made in the Text Analysis
+    -  'templates' contains the html files for each of the webpages
+    -  'main.py' is the backend Flask code that renders all the html pages

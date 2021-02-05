@@ -6,4 +6,4 @@ Jinja2==2.9.6
 MarkupSafe==1.0
 pytz==2017.2
 requests==2.13.0
-Werkzeug==0.12.1
+Werkzeug==0.15.3
